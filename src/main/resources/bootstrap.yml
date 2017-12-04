@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/shizibaitou/config-server.git
+          username: shizibaitou
+          password: wang287010
+          search-paths:
+eureka:
+  instance:
+    prefer-ip-address: true
+    non-secure-port: 8081
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+    enabled: true
+server:
+  port: 8083
