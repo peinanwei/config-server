@@ -5,10 +5,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/peinanwei/
+          uri: https://github.com/peinanwei/config-server
           username: peinanwei
           password: wwc123456
-          search-paths: config-server
+#          search-paths:
 eureka:
   instance:
     prefer-ip-address: true
