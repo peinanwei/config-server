@@ -5,14 +5,14 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/shizibaitou/config-server.git
-          username: shizibaitou
-          password: wang287010
-          search-paths:
+          uri: https://github.com/peinanwei/
+          username: peinanwei
+          password: wwc123456
+          search-paths: config-server
 eureka:
   instance:
     prefer-ip-address: true
-    non-secure-port: 8081
+    non-secure-port: ${server.port}
   client:
     service-url:
       defaultZone: http://localhost:8888/eureka/
